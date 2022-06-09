@@ -11,4 +11,6 @@ Saved cosmetics are located in <Username>\AppData\Roaming\LOVE\Project M Cosmeti
   fighter in Project+ (list.txt) and vanilla Brawl (list-vBrawl.txt). All characters are ordered in their
   respective Cosmetic IDs.
   
+  The program only generates cosmetics if they aren't in their respective folders, so it won't overwrite on existing cosmetics, you must delete them first.
+  
   The program only reads list.txt while it's running so you must change the filenames to work. If either file can't be found, it generates another.
