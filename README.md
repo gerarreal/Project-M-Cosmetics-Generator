@@ -16,3 +16,7 @@ Saved cosmetics are located in <Username>\AppData\Roaming\LOVE\Project M Cosmeti
   Due to how the .txt file is structured, you can add more names in the list to generate character cosmetics.
   
   The program only reads list.txt while it's running so you must change the filenames to work. If either file can't be found, it generates another.
+  
+  ## How to set up:
+  IMPORTANT: The program only works on Windows.
+  To set it up, extract all contents from the .zip to a folder.
