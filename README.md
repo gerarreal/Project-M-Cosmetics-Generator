@@ -19,11 +19,14 @@ Saved cosmetics are located in the directory it is launched.
   To set it up, extract all contents from the .zip to a folder.
 
 NativeFS is used in the program to make cosmetics easier to find.
+
 https://github.com/EngineerSmith/nativefs
 
 To get Project+, go here: https://projectplusgame.com/download
+
 Project+ is the successor to Project M, featuring new stages... & Knuckles.
 
 To get Project+Ex, go here: https://github.com/KingJigglypuff/project-plus-ex
+
 Project+Ex is a modification and unofficial expansion of Project+ that allows users to add custom characters.
 Ridley, Waluigi and Dark Samus are playable characters there.
