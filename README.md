@@ -29,4 +29,4 @@ Project+ is the successor to Project M, featuring new stages... & Knuckles.
 To get Project+Ex, go here: https://github.com/KingJigglypuff/project-plus-ex
 
 Project+Ex is a modification and unofficial expansion of Project+ that allows users to add custom characters.
-Ridley, Waluigi and Dark Samus are playable characters there.
+Ridley and Waluigi are playable characters there. Dark Samus will be added soon.
