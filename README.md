@@ -3,8 +3,6 @@
 Generates Character Selection Screen and Stage Selection Screen cosmetic names for Super Smash Bros. Brawl in the style of the original game, as well as in the style of Project M and it's successor, Project+.
 Saved cosmetics are saved in this <a href="https://www.love2d.org/wiki/love.filesystem">directory</a>, which will depend on your filesystem.
 
-RELEASES IS OUTDATED. DOWNLOAD THE REPOSITORY AND BUILD INSTEAD.
-
 <h1>How to use</h1>
 By booting up for the first time, the program will create the necessary folders for the cosmetics and a few .txt template files containing the name of each playable fighter and stage in Project+Ex. Cosmetics are ordered per .txt listing and are ordered like this:
 
