@@ -96,6 +96,7 @@ end
 local function makeStage_REX(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("gomarice_nanikano_capsule.ttf",21*size);localfont:setLineHeight(0.8);
+    localfont:setFilter("nearest","nearest",1.0)
     local string = delatin(nameMod(name:upper(),false))
     local spaces = 0
     local newlines = 0
@@ -138,6 +139,7 @@ end
 local function makeStage_Brawl(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("LT_70137.TTF",41*size);localfont:setLineHeight(0.8);
+    localfont:setFilter("nearest","nearest",1.0)
     local string = latinCapital(nameMod(name:upper(),false))
     local spaces = 0
     local newlines = 0
@@ -180,6 +182,7 @@ end
 local function makeStage(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("Genuine_StageNames.ttf",37*size)
+    localfont:setFilter("nearest","nearest",1.0)
     local string = nameMod(name,false)
     if size == 1 then
         love.graphics.setColor(0,0,0,1)
@@ -189,13 +192,14 @@ local function makeStage(name,size)
     local scale = tern(localfont:getWidth(string)>(234*size),(234*size)/localfont:getWidth(string),1)
     love.graphics.rectangle("fill",0,0,234*size,63*size)
     love.graphics.setColor(1,1,1,1)
-    love.graphics.printf(string,localfont,1,27*size,((234/scale)*size),"left",0,scale,1.0)
+    love.graphics.printf(string,localfont,1,27*size,((234/scale)*size),"left",0,scale)
 end
 
 --Ultimate Stage Select Screen Names
 local function makeStage_Ultimate(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("FOT-RodinPro-EB.otf",24*size)
+    localfont:setFilter("nearest","nearest",1.0)
     local string = nameMod(name,false)
 	string = string:gsub("/\\n","/")
 	string = string:gsub("\\n"," ")
@@ -207,7 +211,7 @@ local function makeStage_Ultimate(name,size)
     local scale = tern(localfont:getWidth(string)>(234*size),(234*size)/localfont:getWidth(string),1)
     love.graphics.rectangle("fill",0,0,234*size,63*size)
     love.graphics.setColor(1,1,1,1)
-    love.graphics.printf(string,localfont,0,20,(234/scale)*size,"center",0,scale,1,0,0)
+    love.graphics.printf(string,localfont,0,20,(234/scale)*size,"center",0,scale)
 end
 
 --===============================================CHARACTER COSMETICS===============================================
@@ -215,6 +219,7 @@ end
 local function makeName_Brawl(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("DFMinchoPro6N-W14.otf",40*size)
+    localfont:setFilter("nearest","nearest",1.0)
     local string = nameMod(name,nil)
 	string = string:gsub("\\n","\n")
     local spaces = 0
@@ -268,6 +273,7 @@ end
 local function makeName_REX(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("Vipnagorgialla.otf",19.5*size)
+    localfont:setFilter("nearest","nearest",1.0)
     local string = nameMod(name,false)
 	string = string:gsub("\\n"," ")
     if size == 1 then
@@ -285,6 +291,7 @@ end
 local function makeName_Ultimate(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("FOT-RodinPro-EB.otf",24*size)
+    localfont:setFilter("nearest","nearest",1.0)
     local string = nameMod(name,false)
 	string = string:gsub("/\\n","/")
 	string = string:gsub("\\n"," ")
@@ -303,6 +310,7 @@ end
 local function makeName(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("Genuine_PMNames.ttf",28*size)
+    localfont:setFilter("nearest","nearest",1.0)
     local string = nameMod(name,false)
 	string = string:gsub("/\\n","/")
 	string = string:gsub("\\n"," ")
@@ -321,6 +329,7 @@ end
 local function makeBattle(name,width,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("FOT-RodinPro-EB.otf",11*size);localfont:setLineHeight(0.5);
+    localfont:setFilter("nearest","nearest",1.0)
     local string = nameMod(name,false)
 	string = string:gsub("/\\n","/")
 	string = string:gsub("\\n"," ")
@@ -345,6 +354,7 @@ end
 local function makeIcon(name,size)
 	love.graphics.clear()
     local localfont = love.graphics.newFont("FOT-RodinPro-EB.otf",11*size);localfont:setLineHeight(0.5);
+    localfont:setFilter("nearest","nearest",1.0)
     local string = nameMod(name,nil)
 	string = string:gsub("\\n","\n")
 	local wrapwidth, wrappedtext = localfont:getWrap(string,80*size)
@@ -629,6 +639,7 @@ function love.load()
 
 
     fileoperation = love.filesystem.getInfo(export_directory.."/char_battle_list.txt","file")
+    ID = 1
     if fileoperation == nil then
         file = love.filesystem.newFile(export_directory.."/char_battle_list.txt")
         file:open("a")
