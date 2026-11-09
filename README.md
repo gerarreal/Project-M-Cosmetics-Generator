@@ -67,3 +67,7 @@ Due to how the .txt file is structured, you can add more names in the list to ge
 As of 4.0, the final source code is available and the program can be built with an installation of the latest version of Love2D. To do so, follow the instructions on <a href="https://www.love2d.org/wiki/Game_Distribution">the official wiki's distribution page</a>.
 
 Nab <a href="kingjigglypuff.github.io">Project+Ex</a> from here.
+
+<h1>Regarding Copyright</h1>
+Some of the fonts in this repository are present so the game can generate accurate cosmetics based on the styles presented instead of hunting down the fonts. Genuine has been modified to include some Impact characters. The software is provided for free and given the circumstances which it was made, let's keep it free.
+- Jerry
